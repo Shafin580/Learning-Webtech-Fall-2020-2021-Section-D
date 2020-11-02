@@ -6,7 +6,7 @@
 		$name = $_REQUEST['name'];
 		
 		if($name == ""){
-			echo " field required...";
+			$data = "";
 		}else{
 			$data = $name;
 		}
