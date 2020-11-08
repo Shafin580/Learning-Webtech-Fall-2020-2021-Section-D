@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <form action="">
+    
         
         <table border="2" width="60%">
             
@@ -14,7 +14,7 @@
                 
                 <td>
                     
-                    <img src="gallery/logo.png" alt="Logo">
+                    <a href="public_home.php"><img src="gallery/logo.png" alt="Logo"></a>
                     
                    
                     
@@ -22,9 +22,9 @@
                 
                 <td align="right">
                     
-                    <a href="#">Home</a>|
-                    <a href="#">Login</a>|
-                    <a href="#">Registration</a>
+                    <a href="public_home.php">Home</a>|
+                    <a href="login.php">Login</a>|
+                    <a href="registration.php">Registration</a>
                     
                 </td>
  
@@ -45,7 +45,7 @@
             
         </table>
         
-    </form>
+    
     
 </body>
 </html>
