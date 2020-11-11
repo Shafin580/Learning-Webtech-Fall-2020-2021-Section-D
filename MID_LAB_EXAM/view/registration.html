@@ -1,20 +1,20 @@
 <center>
-<form method="post" action="php/registration.php">
+<form method="post" action="../php/registration.php">
 	<table border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td>
 				<fieldset>
 					<legend><h3>REGISTRATION</h3></legend>
-					Id<br/><input type="text"><br/>
-					Password<br/><input type="password"><br/>
-					Confirm Password<br/><input type="password"><br/>
-					Name<br/><input type="text"><br/>
+					Id<br/><input type="text" name="id"><br/>
+					Password<br/><input type="password" name="password"><br/>
+					Confirm Password<br/><input type="password" name="cpassword"><br/>
+					Name<br/><input type="text" name="name"><br/>
 					User Type<hr/>
-					<input type="radio" />User
-					<input type="radio" />Admin
+					<input type="radio" name="radio" value="user">User
+					<input type="radio" name="radio" value="admin">Admin
 					<hr/>
-					<input type="submit" value="Sign Up">
-					<a href="login.html">Sign In</a>
+					<input type="submit" name="submit" value="Sign Up">
+					<a href="../login.html">Sign In</a>
 				</fieldset>
 			</td>
 		</tr>                                
