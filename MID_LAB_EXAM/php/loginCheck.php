@@ -9,14 +9,16 @@ if(isset($_REQUEST['submit'])){
             
             if($user_info[0]=="user"){
                 
-                header('location: ../view/user_home.html');
+                header('location: ../view/user_home.php');
+                setcookie('flag', 'true', time()+120, '/');
                 fclose($myfile);
                 break;
             }
             
             else if($user_info[0]=="admin"){
                 
-                header('location: ../view/admin_home.html');
+                header('location: ../view/admin_home.php');
+                setcookie('flag', 'true', time()+120, '/');
                 fclose($myfile);
                 break;
             }
