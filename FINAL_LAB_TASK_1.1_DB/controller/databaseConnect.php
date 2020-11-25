@@ -95,9 +95,31 @@ function deleteUser($conn, $id){
     
     else{
         
-        echo "Failed to delete Users";
+        echo "Failed to delete User";
         
     }
+    
+}
+
+function updateUser($conn, $id, $username, $password, $email){
+    
+    $sql = "update users set 
+       username = '$username', 
+       password = '$password', 
+       email = '$email'  
+       where id = $id";
+    if(mysqli_query($conn, $sql)){
+        
+        echo "User Updated successfully";
+        
+    }
+    
+    else{
+        
+        echo "Failed to Update User";
+        
+    }
+    
     
 }
 
