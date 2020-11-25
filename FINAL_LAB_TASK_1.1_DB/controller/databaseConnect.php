@@ -84,4 +84,21 @@ function insertUser($conn, $username, $password, $email, $type){
     
 }
 
+function deleteUser($conn, $id){
+    
+    $sql = "delete from users where id = $id";
+    if(mysqli_query($conn, $sql)){
+        
+        echo "User deleted successfully";
+        
+    }
+    
+    else{
+        
+        echo "Failed to delete Users";
+        
+    }
+    
+}
+
 ?>
