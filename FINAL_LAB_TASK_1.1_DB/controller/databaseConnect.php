@@ -67,4 +67,21 @@ function showAll($conn){
     
 }
 
+function insertUser($conn, $username, $password, $email, $type){
+    
+    $sql = "insert into users (username, password, email, type) values ('$username', '$password', '$email', '$type')";
+    if(mysqli_query($conn, $sql)){
+        
+        echo "User Successfully created!";
+        
+        
+    }
+    else{
+        
+        echo "Failed to create user!";
+        
+    }
+    
+}
+
 ?>
