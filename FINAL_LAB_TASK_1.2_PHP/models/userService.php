@@ -22,6 +22,25 @@ function userRegistration($name, $contactNo, $username, $password){
     
 }
 
+function validateUser($username, $password){
+    
+    $conn = getConnection('localhost', 'root', '', 'shop');
+    $sql = "select * from employee where username = '$username' and password = '$password'";
+    
+    if(mysqli_query($conn, $sql)){
+        
+        return true;
+        
+        
+    }
+    else{
+        
+        return false;
+        
+    }
+    
+}
+
 
 
 
