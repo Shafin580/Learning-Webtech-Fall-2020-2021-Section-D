@@ -41,6 +41,30 @@ function validateUser($username, $password){
     
 }
 
+function searchUser($username){
+    
+    $conn = getConnection('localhost', 'root', '', 'shop');
+    $sql = "select * from employee where username = '$username'";
+    $user = [];
+    $result = mysqli_query($conn, $sql);
+        
+    
+        
+    $data = mysqli_fetch_assoc($result);
+    
+    array_push($user, $data);
+    
+    return $user;
+        
+    
+    
+   
+   
+    
+}
+    
+}
+
 
 
 
