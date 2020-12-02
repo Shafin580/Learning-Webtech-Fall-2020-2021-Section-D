@@ -25,6 +25,28 @@
             
         </fieldset>
         
+        <?php
+        
+        if(isset($_REQUEST['msg'])){
+		if($_REQUEST['msg'] == 'registration_failed'){
+			echo "Registration Failed!";
+		}
+
+		if($_REQUEST['msg'] == 'null'){
+			echo "Please fill up all information!";
+		}
+        
+        if($_REQUEST['msg'] == 'registration_completed'){
+			echo "Registration Completed!";
+		}
+        
+        
+
+		
+	}
+        
+        ?>
+        
     </center>
     
 </body>
