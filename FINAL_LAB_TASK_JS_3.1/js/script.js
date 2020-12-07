@@ -81,3 +81,19 @@ function genderValidation(){
     }
     
 }
+
+function degreeValidation(){
+    
+    if(document.getElementById("sscId").checked|| document.getElementById("hscId").checked|| document.getElementById("bscId").checked){
+        
+        alert("Degree Selected");
+        
+    }
+    
+    else{
+        
+        alert("Please Select atleast one degree");
+        
+    }
+    
+}
