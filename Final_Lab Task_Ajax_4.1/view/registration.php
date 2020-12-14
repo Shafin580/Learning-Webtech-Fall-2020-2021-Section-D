@@ -19,17 +19,17 @@
                 Id <br>
                 <input type="text" name="id"><br>
                 Password <br>
-                <input type="password" name="id"><br>
+                <input type="password" name="password"><br>
                 Confirm password <br>
-                <input type="password" name="id"><br>
+                <input type="password" name="cpassword"><br>
                 Name <br>
-                <input type="text" name="id"><br>
+                <input type="text" name="name"><br>
                 Email <br>
-                <input type="email" name="id"><br>
+                <input type="email" name="email"><br>
                 
                 User Type [User/Admin] <br>
                 
-                <select name="bloodGroup" >
+                <select name="userType" >
 				    <option value="User">User</option>
 				    <option value="Admin">Admin</option>
 				
@@ -37,11 +37,15 @@
                
                <hr>
                
-               <input type="submit" name="submit" value="Register"> <a href="../index.php">Login</a>
+               <input type="submit" name="submit" value="Register" onclick="registration()"> <a href="../index.php">Login</a> <br>
                 
             </form>
             
         </fieldset>
+        
+        <div id="result"></div>
+        
+        <script type="text/javascript" src="../script/script.js"></script>
         
     </center>
     

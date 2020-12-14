@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Home</title>
+    <title>Admin Home</title>
 </head>
 <body>
    
@@ -15,7 +15,8 @@
         <h1>Welcome Anne</h1>
         
         <a href="userProfile.php">Profile</a><br>
-        <a href="changePassword.php">Change Password</a><br>
+        <a href="changePasswordAdmin.php">Change Password</a><br>
+        <a href="viewUsers.php">View Users</a><br>
         <a href="logout.php">Logout</a>
         
     </center>
